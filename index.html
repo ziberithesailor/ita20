@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Gradients</title>
+        <body>
+            <style>
+            .container{
+              background-color: #050210;
+              position: absolute;
+              height:600px; width: 600px;
+              }
+            .vanjski{
+              position: absolute;
+              height: 500px; width: 500px;
+              left: 50px; top: 50px;
+              border-radius: 100%;
+              box-shadow:
+              50px 0px 80px  5px hsla(147, 95.4%, 65.9%, 0.2),
+              -50px 0px 80px  5px hsla(147, 95.4%, 65.9%, 0.2),
+              0px -50px 80px 5px hsla(330, 95.2%, 67.5%, 0.2),
+              0px 50px 80px  5px hsla(268, 100.0%, 73.9%, 0.2);
+              background: linear-gradient(#fb5dad , #55fb9f , #b97aff );
+              animation: rotacija 1s infinite linear;
+              animation-play-state: running;
+              }
+            .unutrasnji{
+              position: relative;
+              height: 440px; width: 440px;
+              border-color: red;
+              border-radius: 100%;
+              z-index: 1;
+              background-color: #050210;
+              left: 80px;
+              top: 80px;
+              animation: animacijaunutra 1s infinite linear;
+              }
+            @keyframes rotacija {
+              from{
+                transform: rotate(0deg);
+              }
+              to{
+                transform: rotate(360deg);
+              }
+              }
+            .vanjski:hover{
+              animation-play-state: paused;
+              }
+            .unutrasnji2{
+              position: absolute;
+              height: 4px; width: 4px;
+              border-color: red;
+              border-radius: 100%;
+              z-index: 1;
+              background-color: #140D2D;
+              left: 298px;
+              top: 298px;
+              animation: animacijaunutra2 01s infinite linear;
+              animation-play-state: running;
+              }
+            @keyframes animacijaunutra2 {
+              from{
+                transform: scale(0,0);
+              }
+              to{
+                transform: scale(99,99);
+              }
+            }
+              .unutrasnji2:hover{
+                animation-play-state: paused;
+              }
+            }
+        </style>
+    </head>
+
+    <body>
+      <div class='container'>
+         <div class='vanjski'></div>
+         <div class='unutrasnji'></div>
+         <div class='unutrasnji2'></div>
+      </div>
+    </body>
+</html>
