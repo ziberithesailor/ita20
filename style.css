@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+h1 , p{
+    position: relative;
+    max-width: 760px;
+    width: 90%;
+    display: block;
+}
+.omotac{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 900px;
+    width: 90%;
+    flex-direction: row;
+    flex: 25%;
+}
+.kolona{
+    display: grid;
+    grid-auto-flow: row;
+    margin: 5px;
+    grid-template-rows: 4fr,1fr;
+}
+.sadrzaj{
+    position: relative;
+    width: 144px;
+    height: 144px;
+    margin-top: 10px;
+    text-align: center;
+    background-color:#6CA2D9;  
+    content: url('slika.png');
+    border: solid gray 1px;
+    border-radius: 5px 5px 0px 0px;
+}
+.sadrzaj2{
+    width: 144px;
+    height: 20px;
+    border: solid gray 1px;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+}
+@media screen and (max-width: 1000px) {
+    .kolona {
+      flex: 30%;
+      max-width: 30%;
+    }
+    h1, p{
+      width: 80%;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .kolona {
+      flex: 100%;
+      max-width: 100%;  
+    }  
+    h1, p{
+      width: 50%;
+    }
+  }

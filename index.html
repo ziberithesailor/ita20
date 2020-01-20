@@ -1,84 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-/*novo*/
     <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta name="viewport" content="width=max-width,initial-scale=1.0">
         <meta charset="UTF-8">
         <title>CSS Gradients</title>
+      </head>
         <body>
-            <style>
-            .container{
-              background-color: #050210;
-              position: absolute;
-              height:600px; width: 600px;
-              }
-            .vanjski{
-              position: absolute;
-              height: 500px; width: 500px;
-              left: 50px; top: 50px;
-              border-radius: 100%;
-              box-shadow:
-              50px 0px 80px  5px hsla(147, 95.4%, 65.9%, 0.2),
-              -50px 0px 80px  5px hsla(147, 95.4%, 65.9%, 0.2),
-              0px -50px 80px 5px hsla(330, 95.2%, 67.5%, 0.2),
-              0px 50px 80px  5px hsla(268, 100.0%, 73.9%, 0.2);
-              background: linear-gradient(#fb5dad , #55fb9f , #b97aff );
-              animation: rotacija 1s infinite linear;
-              animation-play-state: running;
-              }
-            .unutrasnji{
-              position: relative;
-              height: 440px; width: 440px;
-              border-color: red;
-              border-radius: 100%;
-              z-index: 1;
-              background-color: #050210;
-              left: 80px;
-              top: 80px;
-              animation: animacijaunutra 1s infinite linear;
-              }
-            @keyframes rotacija {
-              from{
-                transform: rotate(0deg);
-              }
-              to{
-                transform: rotate(360deg);
-              }
-              }
-            .vanjski:hover{
-              animation-play-state: paused;
-              }
-            .unutrasnji2{
-              position: absolute;
-              height: 4px; width: 4px;
-              border-color: red;
-              border-radius: 100%;
-              z-index: 1;
-              background-color: #140D2D;
-              left: 298px;
-              top: 298px;
-              animation: animacijaunutra2 01s infinite linear;
-              animation-play-state: running;
-              }
-            @keyframes animacijaunutra2 {
-              from{
-                transform: scale(0,0);
-              }
-              to{
-                transform: scale(99,99);
-              }
-            }
-              .unutrasnji2:hover{
-                animation-play-state: paused;
-              }
-            }
-        </style>
-    </head>
-
     <body>
-      <div class='container'>
-         <div class='vanjski'></div>
-         <div class='unutrasnji'></div>
-         <div class='unutrasnji2'></div>
+      
+      <div class='omotac'>
+        <h1>Gallery Heading</h1>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <div class="kolona">
+          <div class="sadrzaj"></div>
+          <div class="sadrzaj2">Image Title</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam mauris, sodales sed tincidunt vitae, porta ut purus.
+           Etiam vitae velit vel libero suscipit aliquam a et odio. Donec vel lacus in purus suscipit luctus.
+            Aliquam nec nibh eget quam feugiat malesuada. Cras ac nisl elit. Aliquam mauris sem, gravida quis aliquam ac, hendrerit nec lectus.
+             Sed hendrerit nisl eget nisi eleifend, eget laoreet metus aliquam. 
+             Suspendisse id auctor neque. Nunc vitae purus bibendum, gravida sapien non, molestie ex.
+              In sed metus finibus, mollis augue at, viverra tellus. Curabitur ullamcorper sed nunc eget congue.
+               Fusce hendrerit interdum ornare. Aenean imperdiet sapien vel porttitor blandit.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+           Maecenas vehicula lacus erat, ac tempus odio porttitor ac.</p>
       </div>
     </body>
 </html>
